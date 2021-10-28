@@ -24,3 +24,5 @@ Download the latest pre-minified build from [here](https://github.com/Conglomera
 See [In-Game ModuleScript](#in-game-modulescript)
 
 ## API
+
+TODO: ADD API DOCS
