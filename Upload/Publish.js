@@ -72,12 +72,13 @@ const start = async () => {
 			throw new Error(
 				'Invalid Semver Version. Pleasae delete your IDs.json and try again'
 			);
-		const diff = semver.diff(v, Version);
+		// const diff = semver.diff(v, Version);
 		if (
-			diff == 'major' ||
-			diff == 'minor' ||
-			diff == 'premajor' ||
-			diff == 'preminor'
+			// diff == 'major' ||
+			// diff == 'minor' ||
+			// diff == 'premajor' ||
+			// diff == 'preminor'
+			v !== Version
 		)
 			await createNewModel();
 	}

@@ -321,19 +321,19 @@ Parsers.table = {
 }
 
 -- Base Conglomeration Table
-local Conglomeration = {}
+local Cgl = {}
 
 -- Expose Functions
-Conglomeration.__Parsers = Parsers;
-Conglomeration.__ENCODING = {
+Cgl.__Parsers = Parsers;
+Cgl.__ENCODING = {
   ['\1'] = chunkListToData;
   ['\2'] = contentToChunk;
 }
-Conglomeration.__DECODING = {
+Cgl.__DECODING = {
   ['\1'] = dataToChunkList;
   ['\2'] = chunkToContent;
 }
-Conglomeration.__Util = Util
+Cgl.__Util = Util
 
 -- print(
 --   decode(
@@ -346,4 +346,4 @@ Conglomeration.__Util = Util
 --   )['Name lmao']
 -- )
 
-return Conglomeration
+return Cgl
