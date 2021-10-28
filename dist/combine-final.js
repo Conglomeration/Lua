@@ -18,4 +18,12 @@ const s = `-- Conglomeration
 -- @source https://github.com/Conglomeration/Lua
 
 `;
-fs.writeFileSync('out.lua', s + fs.readFileSync('out.lua', 'utf-8'));
+// // Convert to UTF8
+// fs.writeFileSync('out.lua', fs.readFileSync('out.lua', 'utf16le'), {
+// 	encoding: 'utf-8',
+// });
+
+// Add Notice
+fs.writeFileSync('out.lua', s + fs.readFileSync('out.lua', 'utf8'), {
+	encoding: 'utf-8',
+});

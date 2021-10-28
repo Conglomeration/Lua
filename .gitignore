@@ -1,4 +1,10 @@
 dist/*
 !dist/combine-fixtmp.js
+!dist/combine-fixencoding.js
 !dist/combine-final.js
 !dist/README.md
+Upload/TOKEN.txt
+Upload/node_modules/*
+Upload/IDs.json
+
+node_modules
