@@ -14,4 +14,5 @@ cd ../dist;
 node combine-fixtmp.js;
 LuaSrcDiet out-tmp.lua -o out-tmp2.lua --opt-entropy --opt-comments --opt-whitespace --opt-emptylines --opt-eols --opt-strings --opt-numbers --opt-locals --details > luasrcdiet.log;
 luamin -f out-tmp2.lua > out.lua;
+node combine-final.js;
 echo "Done!"

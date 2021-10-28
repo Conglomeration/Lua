@@ -1,3 +1,4 @@
 dist/*
 !dist/combine-fixtmp.js
+!dist/combine-final.js
 !dist/README.md

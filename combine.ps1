@@ -13,6 +13,7 @@ Set-Location ../dist;
 cmd /c node combine-fixtmp.js;
 cmd /c LuaSrcDiet out-tmp.lua -o out-tmp2.lua --opt-entropy --opt-comments --opt-whitespace --opt-emptylines --opt-eols --opt-strings --opt-numbers --opt-locals --details > luasrcdiet.log;
 cmd /c luamin -f out-tmp2.lua > out.lua;
+cmd /c node combine-final.js;
 Set-Location ..
 Write-Output "Done!"
 Write-Output ""
