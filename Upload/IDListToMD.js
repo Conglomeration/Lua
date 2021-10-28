@@ -8,7 +8,7 @@ fs.writeFileSync(
 
 const tableBegin = `| Version | ID |\n| --- | --- |`;
 const MapFunc = (version, id) => {
-	return `| ${version} | [\`${id}\`](https://www.roblox.com/library/${id}/) |`;
+	return `| ${version} | [\`${id}\`](https://www.roblox.com/library/${id}/) |\n`;
 };
 
 const ForIn = (t, cb) => {
