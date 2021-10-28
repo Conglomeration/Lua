@@ -16,6 +16,7 @@ const s = `-- Conglomeration
 -- @minified
 -- @generated
 -- @source https://github.com/Conglomeration/Lua
+-- @version ${fs.readFileSync('../VERSION.txt', 'utf-8')}
 
 `;
 // // Convert to UTF8

@@ -13,8 +13,7 @@ From there, you can require it using `require("cgl")` (if the file is named `cgl
 
 #### External Module
 
-You can load cgl using `require()`
-TODO: finish this
+You can load cgl using `require(ID)`, where ID is one of the IDs found at [/Roblox.md#ids](/Roblox.md#ids)
 
 #### In-Game ModuleScript
 
