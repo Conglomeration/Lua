@@ -6,7 +6,7 @@ fs.writeFileSync(
 	'If you see this, either the file is being generated, or an error occurred during generation!'
 );
 
-const tableBegin = `| Version | ID |\n| --- | --- |`;
+const tableBegin = `| Version | ID  |\n| ------------ | --- |`;
 const MapFunc = (version, id) => {
 	return `| ${version} | [\`${id}\`](https://www.roblox.com/library/${id}/) |\n`;
 };
@@ -24,19 +24,21 @@ const ForIn = (t, cb) => {
 
 let Markdown = `
 <!-- The below was generated using the Conglomeration -> Lua -> Upload Tool licensed under the MIT License. -->
-#### Latest Builds
-Latest Release: [\`${ids[0]}\`](https://www.roblox.com/library/${ids[0]}/)<br/>
-Latest Pre-Release: [\`${ids[1]}\`](https://www.roblox.com/library/${ids[1]}/)
+### Latest Builds
+| Release Type | ID                                                         |
+| ------------ | ---------------------------------------------------------- |
+| Release      | [\`${ids[0]}\`](https://www.roblox.com/library/${ids[0]}/) |
+| Pre-Release  | [\`${ids[1]}\`](https://www.roblox.com/library/${ids[1]}/) |
 
-#### Release Versions
+### Release Versions
 ${tableBegin}
 ${ForIn(idList.release, MapFunc)}
 
-#### Pre-Release Versions
+### Pre-Release Versions
 ${tableBegin}
 ${ForIn(idList.pre, MapFunc)}
 
-#### All Versions
+### All Versions
 ${tableBegin}
 ${ForIn(idList.raw, MapFunc)}`;
 

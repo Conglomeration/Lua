@@ -11,24 +11,26 @@ In-case I forget to update this, a full list can be found at [/Upload/IDs.md](/U
 
 <!-- The below was generated using the Conglomeration -> Lua -> Upload Tool licensed under the MIT License. -->
 
-#### Latest Builds
+### Latest Builds
 
-Latest Release: [`7858503098`](https://www.roblox.com/library/7858503098/)<br/>
-Latest Pre-Release: [`7858469199`](https://www.roblox.com/library/7858469199/)
+| Release Type | ID                                                         |
+| ------------ | ---------------------------------------------------------- |
+| Release      | [`7858503098`](https://www.roblox.com/library/7858503098/) |
+| Pre-Release  | [`7858469199`](https://www.roblox.com/library/7858469199/) |
 
-#### Release Versions
+### Release Versions
 
 | Version | ID                                                         |
 | ------- | ---------------------------------------------------------- |
 | 0.1.1   | [`7858503098`](https://www.roblox.com/library/7858503098/) |
 
-#### Pre-Release Versions
+### Pre-Release Versions
 
 | Version | ID                                                         |
 | ------- | ---------------------------------------------------------- |
 | 0.1.1-1 | [`7858469199`](https://www.roblox.com/library/7858469199/) |
 
-#### All Versions
+### All Versions
 
 | Version | ID                                                         |
 | ------- | ---------------------------------------------------------- |
