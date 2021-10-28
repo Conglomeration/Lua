@@ -7,7 +7,7 @@ fs.writeFileSync(
 	'If you see this, either the file is being generated, or an error occurred during generation!'
 );
 
-const tableBegin = `| Version | ID  |\n| ------------ | --- |`;
+const tableBegin = `| Version | ID  |\n| ------- | --- |`;
 const MapFunc = (version, id) => {
 	return `| ${version} | [\`${id}\`](https://www.roblox.com/library/${id}/) |\n`;
 };
@@ -29,7 +29,7 @@ const noblox = require('noblox.js');
 	const id0 = await noblox.getProductInfo(ids[0]);
 	const id1 = await noblox.getProductInfo(ids[1]);
 
-	let Markdown = `
+	let Markdown = `<!--BEGIN @GENERATED-->
 <!-- The below was generated using the Conglomeration -> Lua -> Upload Tool licensed under the MIT License. -->
 ### Latest Builds
 | Release Type | Version | ID                                                         |
@@ -54,4 +54,10 @@ ${tableBegin}
 ${ForIn(idList.raw, MapFunc)}`;
 
 	fs.writeFileSync('./IDs.md', Markdown);
+	fs.writeFileSync(
+		'../Roblox.md',
+		fs
+			.readFileSync('../Roblox.md', 'utf-8')
+			.split('<!--BEGIN @GENERATED-->')[0] + Markdown
+	);
 })();
