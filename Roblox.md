@@ -7,4 +7,29 @@ This file contains extra information relating to what's found in the README unde
 
 Below, you can find a table of IDs and their respective Versions
 
-### A full list, in-case I forget to update this, can be found at [/Upload/IDs.md](/Upload/IDs.md)
+In-case I forget to update this, a full list can be found at [/Upload/IDs.md](/Upload/IDs.md)
+
+<!-- The below was generated using the Conglomeration -> Lua -> Upload Tool licensed under the MIT License. -->
+
+#### Latest Builds
+
+Latest Release: [`7858503098`](https://www.roblox.com/library/7858503098/)<br/>
+Latest Pre-Release: [`7858469199`](https://www.roblox.com/library/7858469199/)
+
+#### Release Versions
+
+| Version | ID                                                         |
+| ------- | ---------------------------------------------------------- |
+| 0.1.1   | [`7858503098`](https://www.roblox.com/library/7858503098/) |
+
+#### Pre-Release Versions
+
+| Version | ID                                                         |
+| ------- | ---------------------------------------------------------- |
+| 0.1.1-1 | [`7858469199`](https://www.roblox.com/library/7858469199/) |
+
+#### All Versions
+
+| Version | ID                                                         |
+| ------- | ---------------------------------------------------------- | --- | ----- | ---------------------------------------------------------- |
+| 0.1.1-1 | [`7858469199`](https://www.roblox.com/library/7858469199/) |     | 0.1.1 | [`7858503098`](https://www.roblox.com/library/7858503098/) |
