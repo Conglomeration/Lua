@@ -35,7 +35,7 @@ const addToIDHistory = id => {
 	idHistory.raw[Version] = id;
 	const ispre = semver.prerelease(Version);
 	idHistory[ispre && ispre[0] ? 'pre' : 'release'][Version] = id;
-	console.log(idHistory[ispre && ispre[0] ? 'pre' : 'release']);
+	// console.log(idHistory[ispre && ispre[0] ? 'pre' : 'release']);
 	fs.writeFileSync('./IDList.json', JSON.stringify(idHistory, null, 2));
 };
 
