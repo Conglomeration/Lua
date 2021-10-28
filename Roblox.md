@@ -13,10 +13,10 @@ In-case I forget to update this, a full list can be found at [/Upload/IDs.md](/U
 
 ### Latest Builds
 
-| Release Type | ID                                                         |
-| ------------ | ---------------------------------------------------------- |
-| Release      | [`7858503098`](https://www.roblox.com/library/7858503098/) |
-| Pre-Release  | [`7858469199`](https://www.roblox.com/library/7858469199/) |
+| Release Type | Version | ID                                                         |
+| ------------ | ------- | ---------------------------------------------------------- |
+| Release      | 0.1.1   | [`7858503098`](https://www.roblox.com/library/7858503098/) |
+| Pre-Release  | 0.1.1-1 | [`7858469199`](https://www.roblox.com/library/7858469199/) |
 
 ### Release Versions
 
