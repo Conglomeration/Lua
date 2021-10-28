@@ -8,7 +8,7 @@ Write-Output "@depends LuaCC"
 Write-Output "@depends NodeJS >= 16"
 Write-Output ""
 Set-Location src;
-cmd /c luacc -o ../dist/out-tmp.lua Conglomeration util Parsers Base64 typeof;
+cmd /c luacc -o ../dist/out-tmp.lua Conglomeration util Parsers Base64 typeof CFrameSerializer;
 Set-Location ../dist;
 cmd /c node combine-fixtmp.js;
 cmd /c luamin -f out-tmp.lua > out-tmp2.lua;

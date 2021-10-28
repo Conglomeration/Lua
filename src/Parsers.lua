@@ -1,4 +1,7 @@
 local Util = require('util')
+local CFrameSerializer = require(
+  'CFrameSerializer'
+)
 -- Generate Parser
 --- datatype Actual typeof return
 --- parse String -> Data
@@ -107,7 +110,13 @@ local Parsers = {
     end
   );
   -- ANCHOR CFrame
-  -- TODO: ADD CFRAME SUPPORT
+  generateParser(
+    'CFrame', function( cf )
+      return CFrameSerializer:EncodeCFrame(cf)
+    end, function( cf )
+      return CFrameSerializer:DecodeCFrame(cf)
+    end
+  );
   -- !SECTION
 }
 return Parsers
