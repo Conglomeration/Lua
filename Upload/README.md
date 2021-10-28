@@ -11,3 +11,7 @@ Uploads
 ## Usage
 
 Run `Publish.js` in node. This will upload whatever the **current build** is (as found in ../dist/out.lua)
+
+## notice
+
+yes im using json for saving the id list, i haven't made a js cgl lib yet mate
