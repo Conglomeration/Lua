@@ -2,10 +2,10 @@ const fs = require('fs-extra');
 const idList = JSON.parse(fs.readFileSync('./IDList.json'));
 const ids = JSON.parse(fs.readFileSync('./IDs.json'));
 const namePrefix = 'Conglomeration v';
-fs.writeFileSync(
-	'./IDs.md',
-	'If you see this, either the file is being generated, or an error occurred during generation!'
-);
+// fs.writeFileSync(
+// 	'./IDs.md',
+// 	'If you see this, either the file is being generated, or an error occurred during generation!'
+// );
 
 const tableBegin = `| Version | ID  |\n| ------- | --- |`;
 const MapFunc = (version, id) => {
