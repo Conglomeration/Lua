@@ -335,6 +335,11 @@ Cgl.__DECODING = {
 }
 Cgl.__Util = Util
 
+Cgl.encode = encode;
+Cgl.decode = decode;
+Cgl.stringify = encode;
+Cgl.parse = encode;
+
 -- print(
 --   decode(
 --     encode(
