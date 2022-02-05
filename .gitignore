@@ -2,6 +2,8 @@ dist/*
 !dist/combine-fixtmp.js
 !dist/combine-fixencoding.js
 !dist/combine-final.js
+!dist/luamin.js
+!dist/luasrcdiet.lua
 !dist/README.md
 Upload/TOKEN.txt
 Upload/node_modules/*

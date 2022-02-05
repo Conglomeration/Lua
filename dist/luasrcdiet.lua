@@ -14,7 +14,9 @@
 -- * TODO: need some automatic testing for a semblance of sanity.
 -- * TODO: the plugin module is highly experimental and unstable.
 ----
-local requireLibs = {
+local requireLibs = {};
+local require = function(v) return requireLibs[v]() end
+requireLibs = {
   equiv = function()
     ---------
     -- Source and binary equivalency comparisons
@@ -567,12 +569,12 @@ local requireLibs = {
     ---------
     -- LuaSrcDiet API
     ----
-    local equiv = require 'luasrcdiet.equiv'
-    local llex = require 'luasrcdiet.llex'
-    local lparser = require 'luasrcdiet.lparser'
-    local optlex = require 'luasrcdiet.optlex'
-    local optparser = require 'luasrcdiet.optparser'
-    local utils = require 'luasrcdiet.utils'
+    local equiv = require 'equiv'
+    local llex = require 'llex'
+    local lparser = require 'lparser'
+    local optlex = require 'optlex'
+    local optparser = require 'optparser'
+    local utils = require 'utils'
 
     local concat = table.concat
     local merge = utils.merge
@@ -3943,7 +3945,7 @@ end;
 --   -o <filespec> option.
 -- * The HTML style tries to follow that of the Lua wiki.
 ----
-local fs = require "luasrcdiet.fs"
+local fs = require "fs"
 
 local concat = table.concat
 local find = string.find
@@ -4200,7 +4202,6 @@ end
 return M
 end;
 }
-local require = function(v) return requireLibs[v]() end
 
 local equiv = require 'equiv'
 local fs = require 'fs'
@@ -4312,7 +4313,7 @@ local NONE_CONFIG = [[
 ]]
 
 local DEFAULT_SUFFIX = '_' -- default suffix for file renaming
-local PLUGIN_SUFFIX = 'luasrcdiet.plugin.' -- relative location of plugins
+local PLUGIN_SUFFIX = 'plugin.' -- relative location of plugins
 
 ------------- Startup and initialize option list handling -------------
 

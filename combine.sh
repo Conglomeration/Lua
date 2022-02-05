@@ -9,7 +9,7 @@ echo "@depends LuaCC"
 echo "@depends NodeJS >= 16"
 echo ""
 cd src;
-luacc -o ../dist/out-tmp.lua Conglomeration util Parsers Base64 typeof CFrameSerializer;
+lua ../luacc.lua -o ../dist/out-tmp.lua Conglomeration util Parsers Base64 typeof CFrameSerializer;
 cd ../dist;
 node combine-fixtmp.js;
 LuaSrcDiet out-tmp.lua -o out-tmp2.lua --opt-entropy --opt-comments --opt-whitespace --opt-emptylines --opt-eols --opt-strings --opt-numbers --opt-locals --details > luasrcdiet.log;

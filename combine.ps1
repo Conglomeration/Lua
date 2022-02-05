@@ -8,12 +8,12 @@ Write-Output "@depends LuaCC"
 Write-Output "@depends NodeJS >= 16"
 Write-Output ""
 Set-Location src;
-cmd /c luacc -o ../dist/out-tmp.lua Conglomeration util Parsers Base64 typeof CFrameSerializer;
+cmd /c lua ../luacc.lua -o ../dist/out-tmp.lua Conglomeration util Parsers Base64 typeof CFrameSerializer;
 Set-Location ../dist;
 cmd /c node combine-fixtmp.js;
-cmd /c luamin -f out-tmp.lua > out-tmp2.lua;
+# cmd /c node luamin.js -f out-tmp.lua > out-tmp2.lua;
 cmd /c node combine-fixencoding.js;
-cmd /c LuaSrcDiet out-tmp2.lua -o out.lua --opt-entropy --opt-comments --opt-whitespace --opt-emptylines --opt-eols --opt-strings --opt-numbers --opt-locals --details > luasrcdiet.log;
+cmd /c lua ./luasrcdiet.lua out-tmp.lua -o out.lua --opt-entropy --opt-comments --opt-whitespace --opt-emptylines --opt-eols --opt-strings --opt-numbers --opt-locals --details > luasrcdiet.log;
 cmd /c node combine-final.js;
 Set-Location ..
 Write-Output "Done!"
