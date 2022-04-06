@@ -5,5 +5,5 @@
 # @dependency Lua5.1
 # @dependency NPM
 
-luarocks install luacc luasrcdiet --lua-version 5.1
+luarocks install luasrcdiet --lua-version 5.1
 npm install luamin -g
