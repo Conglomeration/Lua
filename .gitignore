@@ -4,6 +4,7 @@ dist/*
 !dist/combine-final.js
 !dist/luamin.js
 !dist/luasrcdiet.lua
+!dist/luacc.lua
 !dist/README.md
 Upload/TOKEN.txt
 Upload/node_modules/*
