@@ -16,9 +16,14 @@ local Parsers = {
   end, function( str ) return Color3.new(Util.split_fast(str, '\6')) end);
   -- ANCHOR nil
   generateParser('nil', function() end, function() return '' end);
+  -- ANCHOR null
+  generateParser('null', function() end, function() return '' end);
+  -- ANCHOR null
+  generateParser('undefined', function() end, function() return '' end);
   -- ANCHOR string
   generateParser('String', function( str ) return str end,
-                 function( str ) return str end); -- ANCHOR number
+                 function( str ) return str end); --
+  -- ANCHOR number
   generateParser('Number', function( str ) return tostring(str) end,
                  function( str ) return tonumber(str) end);
   -- ANCHOR function (warns/errors)
@@ -32,7 +37,8 @@ local Parsers = {
     return function()
       error('Cannot parse functions yet. Please try again later', 2)
     end;
-  end); -- ANCHOR userdata
+  end); --
+  -- ANCHOR userdata
   generateParser('UserData', function()
     error(
         'Cannot parse UserData - Try adding a parser/encoder to Conglomeration for this specific type')
