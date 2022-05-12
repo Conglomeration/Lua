@@ -29,7 +29,7 @@ fs.writeFileSync('Module.rbxmx', Buffer.from(Model), {
 	encoding: 'utf-8',
 });
 
-const namePrefix = 'Conglomeration v';
+const namePrefix = 'CGL v';
 
 const addToIDHistory = id => {
 	idHistory.raw[Version] = id;
@@ -90,7 +90,7 @@ const start = async () => {
 		await noblox.configureItem(
 			_id,
 			namePrefix + Version,
-			'Module for Conglomeration / Lua | Minified',
+			'Minified Module for CGL.Lua',
 			true,
 			true
 		);

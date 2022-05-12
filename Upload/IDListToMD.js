@@ -1,7 +1,7 @@
 const fs = require('fs-extra');
 const idList = JSON.parse(fs.readFileSync('./IDList.json'));
 const ids = JSON.parse(fs.readFileSync('./IDs.json'));
-const namePrefix = 'Conglomeration v';
+const namePrefix = /(Conglomeration v|CGL v)/gi;
 // fs.writeFileSync(
 // 	'./IDs.md',
 // 	'If you see this, either the file is being generated, or an error occurred during generation!'
@@ -26,6 +26,7 @@ const ForIn = (t, cb) => {
 const noblox = require('noblox.js');
 
 (async () => {
+  console.log(ids);
 	const id0 = await noblox.getProductInfo(ids[0]);
 	const id1 = await noblox.getProductInfo(ids[1]);
 

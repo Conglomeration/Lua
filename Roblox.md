@@ -13,7 +13,7 @@ Below, you can find a table of IDs and their respective Versions
 | Release Type | Version | ID                                                         |
 | ------------ | ------- | ---------------------------------------------------------- |
 | Release      | 0.1.1 | [`7858503098`](https://www.roblox.com/library/7858503098/) |
-| Pre-Release  | 0.1.2-alpha.1 | [`7860146364`](https://www.roblox.com/library/7860146364/) |
+| Pre-Release  | 0.1.2-beta.1 | [`9611536873`](https://www.roblox.com/library/9611536873/) |
 
 ### Release Versions
 | Version | ID  |
@@ -26,6 +26,7 @@ Below, you can find a table of IDs and their respective Versions
 | ------- | --- |
 | 0.1.1-RC.1 | [`7858469199`](https://www.roblox.com/library/7858469199/) |
 | 0.1.2-alpha.1 | [`7860146364`](https://www.roblox.com/library/7860146364/) |
+| 0.1.2-beta.1 | [`9611536873`](https://www.roblox.com/library/9611536873/) |
 
 
 ### All Versions
@@ -34,3 +35,4 @@ Below, you can find a table of IDs and their respective Versions
 | 0.1.1-RC.1 | [`7858469199`](https://www.roblox.com/library/7858469199/) |
 | 0.1.1 | [`7858503098`](https://www.roblox.com/library/7858503098/) |
 | 0.1.2-alpha.1 | [`7860146364`](https://www.roblox.com/library/7860146364/) |
+| 0.1.2-beta.1 | [`9611536873`](https://www.roblox.com/library/9611536873/) |
