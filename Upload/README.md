@@ -5,7 +5,7 @@ Uploads
 ## Setup
 
 1. Paste your bot's .ROBLOSECURITY cookie into `TOKEN.txt` ([tutorial](https://noblox.js.org/tutorial-Authentication.html))
-2. Run `yarn`
+2. Run `pnpm i`
 3. Done!
 
 ## Usage
